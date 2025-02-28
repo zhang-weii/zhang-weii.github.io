@@ -1,15 +1,23 @@
 ---
 permalink: /
-title: "Hello"
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am a master's student from [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/)(SJTU), focusing on computer vision, particularly in the field of object detection.
+My current research interests are computer vision, especially in object detection.
 
-Education
+I am currently a master's student in automation at [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/)(SJTU) since the fall of 2024 under the supervision of Asst. Prof. [Xue Yang](https://yangxue.site/).
+
+I received my Bachelor’s Degree in automation from SJTU in 2024.
+
+News
 ======
-* M.S. in SJTU, 2027(expected)
-* B.S. in SJTU, 2024
+Paper in on the way
+------
+
+Received the award of Outstanding Undergraduate Graduation of Shanghai Jiao Tong University, June, 2024
+------
+I was awarded the honorary title of Outstanding Undergraduate Graduation of Shanghai Jiao Tong University.
