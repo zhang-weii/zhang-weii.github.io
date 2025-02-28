@@ -18,6 +18,7 @@ News
 
 Paper in on the way
 ------
+Hurry up!!! For CVPR2026!!!
 
 Received the award of Outstanding Undergraduate Graduation of Shanghai Jiao Tong University, June, 2024
 ------
