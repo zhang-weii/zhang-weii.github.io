@@ -22,7 +22,7 @@ repository               : "zhang-weii/zhang-weii.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Monkey D.Luffy.png"
+  avatar           : "/images/Monkey D.Luffy.png"
   name             : "Zhang Wei"
   pronouns         : # example: "she/her"  
   bio              : "Striving for excellence is painful, but it is also joyful"
