@@ -13,16 +13,16 @@ title                    : "Zhang Wei' Homepage"
 title_separator          : "-"
 name                     : &name "Zhang Wei"
 description              : &description "personal description"
-url                      : https://weii-zhang.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://zhang-weii.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "weii-zhang/weii-zhang.github.io"
+repository               : "zhang-weii/zhang-weii.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "Monkey D.Luffy.png"
   name             : "Zhang Wei"
   pronouns         : # example: "she/her"  
   bio              : "Striving for excellence is painful, but it is also joyful"
@@ -45,7 +45,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "https://weii-zhang.github.io"
+  github           : "https://zhang-weii.github.io"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
