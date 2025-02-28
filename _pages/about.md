@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: "Hello, I am Zhang Wei"
+title: "Hello"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-A master's student from [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/)(SJTU), focusing on computer vision, particularly in the field of object detection.
+I am a master's student from [Shanghai Jiao Tong University](https://en.sjtu.edu.cn/)(SJTU), focusing on computer vision, particularly in the field of object detection.
 
 Education
 ======
