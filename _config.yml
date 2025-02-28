@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Zhang  Wei(张威)"
+title                    : "Zhang  Wei ( 张威 )"
 title_separator          : "-"
 name                     : &name "Zhang Wei"
 description              : &description "personal description"
