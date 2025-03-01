@@ -13,10 +13,10 @@ tags:
 # 生成学术主页
 
 1. 注册一个 GitHub 帐户。
-2. Fork 开源项目 [Academicpages](https://github.com/academicpages/academicpages.github.io) 来创建副本，并且重命名为“[您的 GitHub 用户名].github.io”。
+2. Fork 开源项目 [Academicpages](https://github.com/academicpages/academicpages.github.io)，命名为“[您的 GitHub 用户名].github.io”。
 3. 点击仓库上方的 Settings，点击左侧的 Pages，修改 Branch 为 master/root,然后 save。
 4. 一会儿之后，可以在本页看到， Your site is live at https://[您的 GitHub 用户名].github.io。
-5. 进入生成的网址，就看到了原仓库的模板主页，下面介绍各部分如何使用和修改。
+5. 进入生成的网址，可以看到原仓库的模板主页，下面介绍各部分如何使用和修改。
 
 # 修改学术主页
 ## 修改 Site Author & Your Name Site Title
@@ -58,4 +58,4 @@ tags:
 
 ## 修改 SHARE ON
 ![SHARE ON](/images/Blog Posts/Blog Posts 1/SHARE ON.png)
-* 可以直接用
+* 可以直接用，还没搞懂
