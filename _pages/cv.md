@@ -18,7 +18,7 @@ Research experience
 ======
 * Fall 2024: master's student
   * SJTU
-  * Duties includes: object detection
+  * Duties includes: deep learning, object detection
   * Supervisor: Xue Yang
 
 Honors and awards
