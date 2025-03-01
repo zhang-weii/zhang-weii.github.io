@@ -49,10 +49,10 @@ redirect_from:
 
 ### 斜体
 
-强调标签应使文本*斜体*。
+斜体标签应使文本*斜体*。
 
 ```
-强调标签应使文本*斜体*。
+斜体标签应使文本*斜体*。
 ```
 
 ## 块引用
@@ -61,11 +61,6 @@ redirect_from:
 
 ```
 > 现在是引用。
-```
-
-```
-**小心！** 可以通过将 `{: .notice}` 附加到段落来添加注意。
-{: .notice}
 ```
 
 ## 无序列表（嵌套）
@@ -120,10 +115,10 @@ redirect_from:
 
 ## 代码/按钮
 
-应用 `.btn` 类时，使任何文字更加突出。
+使用 `.btn` 类时，使任何文字更加突出。
 
 ```
-应用 `.btn` 类时，使任何文字更加突出。
+使用 `.btn` 类时，使任何文字更加突出。
 ```
 
 ## 代码块
@@ -233,51 +228,49 @@ The abbreviation SJTU stands for "Shanghai Jiao Tong University".
 ### 细节标签
 
 <details>
-  <summary>打开</summary>
-  被发现了
+  <summary>默认关闭</summary>
+  豫章故郡，洪都新府
 </details>
 
-或者
-
 <details open>
-  <summary>打开</summary>
-  被发现了
+  <summary>默认打开</summary>
+  星分翼轸，地接衡庐
 </details>
 
 ### 预格式化标签
 
-生成一个预格式化文本
+下面是一个预格式化文本
 
 <pre>
 上海交通大学 {
   饮水思源
   爱国荣校
-  苟利国家生死以，岂因祸福避趋之
+  苟利国家生死以 岂因祸福避趋之
 }
 </pre>
 
 ### 下标标签
 
-H<sub>2</sub>O.
+H<sub>2</sub>O
 
 ```
-H<sub>2</sub>O.
+H<sub>2</sub>O
 ```
 
 ### 上标标签
 
-E = MC<sup>2</sup>.
+E = MC<sup>2</sup>
 
 ```
-E = MC<sup>2</sup>.
+E = MC<sup>2</sup>
 ```
 
 ### 变量标签
 
-变量 <var>X</var>.
+变量 <var>X</var>
 
 ```
-变量 <var>X</var>.
+变量 <var>X</var>
 ```
 
 ***
