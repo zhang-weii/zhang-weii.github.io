@@ -2,7 +2,7 @@
 title: "Journal Articles is on the way"
 collection: publications
 category: manuscripts
-permalink: /publication/2026-01-01
+permalink: /publication/Journal Articles 2026-01-01
 excerpt: 'This paper is on the way.'
 date: 2026-01-01
 venue: 'Journal 1'
