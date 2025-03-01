@@ -7,223 +7,271 @@ redirect_from:
   - /markdown.html
 ---
 
-## Locations of key files/directories
 
-* Basic config options: _config.yml
-* Top navigation bar config: _data/navigation.yml
-* Single pages: _pages/
-* Collections of pages are .md or .html files in:
-  * _publications/
-  * _portfolio/
-  * _posts/
-  * _teaching/
-  * _talks/
-* Footer: _includes/footer.html
-* Static files (like PDFs): /files/
-* Profile image (can set in _config.yml): images/profile.png
+# Markdown 指南
 
-## Tips and hints
+## 标题
 
-* Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
-* Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version GitHub built with Jekyll. 
-  * Green check: successful build
-  * Orange circle: building
-  * Red X: error
-  * No icon: not built
+要创建标题，请在单词或短语前面添加井号 (#) 。井号的数量代表了标题的级别。例如，添加三个井号即创建一个三级标题 (<h3>) (例如：### My Header)。
 
-* Academic Pages uses [Jekyll Kramdown](https://jekyllrb.com/docs/configuration/markdown/), GitHub Flavored Markdown (GFM) parser, which is similar to the version of Markdown used on GitHub, but may have some minor differences. 
-  * Some of emoji supported on GitHub should be supposed via the [Jemoji](https://github.com/jekyll/jemoji) plugin :computer:.
-  * The best list of the supported emoji can be found in the [Emojis for Jekyll via Jemoji](https://www.fabriziomusacchio.com/blog/2021-08-16-emojis_for_Jekyll/#computer) blog post.
+# 标题一
 
-* While GitHub Pages prevents server side code from running, client-side scripts are supported.
-  * This means that Google Analytics is supported, and [the wiki](https://github.com/academicpages/academicpages.github.io/wiki/Adding-Google-Analytics) should contain the most up-to-date information on getting it working.
+```
+# 标题一
+```
 
-## Resources
- * [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/)
- * [MathJax Documentation](https://docs.mathjax.org/en/latest/)
+## 标题二
 
-## MathJax 
+```
+## 标题二
+```
 
-Support for MathJax Version 3.0 is included in the template:
+### 标题三
 
-$$
-\displaylines{
-\nabla \cdot E= \frac{\rho}{\epsilon_0} \\\
-\nabla \cdot B=0 \\\
-\nabla \times E= -\partial_tB \\\
-\nabla \times B  = \mu_0 \left(J + \varepsilon_0 \partial_t E \right)
-}
-$$
+```
+### 标题三
+```
 
-The default delimiters of `$$...$$` and `\\[...\\]` are supported for displayed mathematics, while `\\(...\\)` should be used for in-line mathematics (ex., \\(a^2 + b^2 = c^2\\))
+## 分隔线
 
-**Note** that since Academic Pages uses Markdown which cases some interference with MathJax and LaTeX for escaping characters and new lines, although [some workarounds exist](https://math.codidact.com/posts/278763/278772#answer-278772).
+---
 
-## Markdown guide
+```
+---
+```
 
-Academic Pages uses [kramdown](https://kramdown.gettalong.org/index.html) for Markdown rendering, which has some differences from other Markdown implementations such as GitHub's. In addition to this guide, please see the [kramdown Syntax page](https://kramdown.gettalong.org/syntax.html) for full documentation.  
+## 强调标签
 
-### Header three
+### 粗体
 
-#### Header four
+此标签显示**粗体**文本。
 
-##### Header five
+```
+此标签显示**粗体**文本。
+```
 
-###### Header six
+### 斜体
 
-## Blockquotes
+强调标签应使文本*斜体*。
 
-Single line blockquote:
+```
+强调标签应使文本*斜体*。
+```
 
-> Quotes are cool.
+## 块引用
 
-## Tables
+单行块引用：
 
-### Table 1
+```
+> 引用很酷。
+```
 
-| Entry            | Item   |                                                              |
-| --------         | ------ | ------------------------------------------------------------ |
-| [John Doe](#)    | 2016   | Description of the item in the list                          |
-| [Jane Doe](#)    | 2019   | Description of the item in the list                          |
-| [Doe Doe](#)     | 2022   | Description of the item in the list                          |
+## 注意
 
-### Table 2
+**小心！** 可以通过将 `{: .notice}` 附加到段落来添加注意。
+{: .notice}
 
-| Header1 | Header2 | Header3 |
+```
+**小心！** 可以通过将 `{: .notice}` 附加到段落来添加注意。
+{: .notice}
+```
+
+## 定义列表
+
+定义列表一标题
+:   定义列表一
+
+定义列表二标题
+:   定义列表二
+
+```
+定义列表一标题
+:   定义列表一
+
+定义列表二标题
+:   定义列表二
+```
+
+## 无序列表（嵌套）
+
+  - 列表项目一 
+      - 列表项目一 
+          - 列表项目一 
+          - 列表项目二
+      - 列表项目二
+  - 列表项目二
+
+```
+  - 列表项目一 
+      - 列表项目一 
+          - 列表项目一 
+          - 列表项目二
+      - 列表项目二
+  - 列表项目二
+```
+
+## 有序列表（嵌套）
+
+  1. 列表项目一 
+      1. 列表项目一 
+          1. 列表项目一
+          2. 列表项目二
+      2. 列表项目二
+  2. 列表项目二
+
+```
+  1. 列表项目一 
+      1. 列表项目一 
+          1. 列表项目一
+          2. 列表项目二
+      2. 列表项目二
+  2. 列表项目二
+```
+
+## 表格
+
+| 标题1 | 标题2 | 标题3 |
 |:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | ce
-ll5   | cell6   |
-|-----------------------------|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=============================|
-| Foot1   | Foot2   | Foot3   |
+| 项目1   | 项目2   | 项目3   |
+| 项目4   | 项目5   | 项目6   |
 
-## Definition Lists
-
-Definition List Title
-:   Definition list division.
-
-Startup
-:   A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
-
-#dowork
-:   Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
-
-Do It Live
-:   I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
-
-## Unordered Lists (Nested)
-
-  * List item one 
-      * List item one 
-          * List item one
-          * List item two
-          * List item three
-          * List item four
-      * List item two
-      * List item three
-      * List item four
-  * List item two
-  * List item three
-  * List item four
-
-## Ordered List (Nested)
-
-  1. List item one 
-      1. List item one 
-          1. List item one
-          2. List item two
-          3. List item three
-          4. List item four
-      2. List item two
-      3. List item three
-      4. List item four
-  2. List item two
-  3. List item three
-  4. List item four
-
-## Buttons
-
-Make any link standout more when applying the `.btn` class.
-
-## Notices
-
-Basic notices or call-outs are supported using the following syntax:
-
-```markdown
-**Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
-{: .notice}
+```
+| 标题1 | 标题2 | 标题3 |
+|:--------|:-------:|--------:|
+| 项目1   | 项目2   | 项目3   |
+| 项目4   | 项目5   | 项目6   |
 ```
 
-which wil render as:
+## 代码/按钮
 
-**Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
-{: .notice}
+应用 `.btn` 类时，使任何文字更加突出。
 
-### Footnotes
-
-Footnotes can be useful for clarifying points in the text, or citing information.[^1] Markdown support numeric footnotes, as well as text as long as the values are unique.[^note]
-
-```markdown
-This is the regular text.[^1] This is more regular text.[^note]
-
-[^1]: This is the footnote itself.
-[^note]: This is another footnote.
+```
+应用 `.btn` 类时，使任何文字更加突出。
 ```
 
-[^1]: Such as this footnote.
-[^note]: When using text for footnotes markers, no spaces are permitted in the name.
+## 代码块
 
-## HTML Tags
+```
+    <html>
+      <head>
+      </head>
+    </html>
+```
 
-### Address Tag
+```
+\```
+    <html>
+      <head>
+      </head>
+    </html>
+\```
+```
+
+## 链接
+
+这是一个[链接](http://github.com "Github")的例子。
+
+```
+这是一个[链接](http://github.com "Github")的例子。
+```
+
+## 脚注
+
+这是一个简单的脚注[^1]， 这是一个更长的脚注[^bignote]。
+
+[^1]: 这是第一个脚注。
+
+[^bignote]: 这是一个有多个段落和代码的。
+
+    缩进段落以将它们包含在脚注中。
+
+    `{我的代码}`
+
+    添加尽可能多的段落。
+
+```
+这是一个简单的脚注[^1]， 这是一个更长的脚注[^bignote]。
+
+[^1]: 这是第一个脚注。
+
+[^bignote]: 这是一个有多个段落和代码的。
+
+    缩进段落以将它们包含在脚注中。
+
+    `{我的代码}`
+
+    添加尽可能多的段落。
+```
+
+## 图片
+
+![500x300.png](/images/500x300.png)
+
+```
+![500x300.png](/images/500x300.png)
+```
+
+## HTML 标签
+
+### 删除标签
+
+这个标签可以让你<strike>删除</strike>文本。
+
+```
+这个标签可以让你<strike>删除</strike>文本。
+```
+
+### 插入标签
+
+此标记应表示<ins>插入</ins>的文本。
+
+```
+此标记应表示<ins>插入</ins>的文本。
+```
+
+### 地址标签
 
 <address>
   1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
 </address>
 
-### Anchor Tag (aka. Link)
+```
+<address>
+  1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
+</address>
+```
 
-This is an example of a [link](http://github.com "GitHub").
-
-### Abbreviation Tag
+### 缩写标签
 
 The abbreviation CSS stands for "Cascading Style Sheets".
 
 *[CSS]: Cascading Style Sheets
 
-### Cite Tag
+```
+The abbreviation CSS stands for "Cascading Style Sheets".
 
-"Code is poetry." ---<cite>Automattic</cite>
+*[CSS]: Cascading Style Sheets
+```
 
-### Code Tag
-
-You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
-
-You can also write larger blocks of code with syntax highlighting supported for some languages, such as Python:
+### 代码标签
 
 ```python
 print('Hello World!')
 ```
 
-or R:
-
-```R
-print("Hello World!", quote = FALSE)
+```
+\```python
+print('Hello World!')
+\```
 ```
 
-### Details Tag (collapsible sections)
-
-The HTML `<details>` tag works well with Markdown and allows you to include collapsible sections, see [W3Schools](https://www.w3schools.com/tags/tag_details.asp) for more information on how to use the tag.
+### 细节标签
 
 <details>
   <summary>Collapsed by default</summary>
   This section was collapsed by default!
 </details>
-
-The source code:
 
 ```HTML
 <details>
@@ -232,27 +280,30 @@ The source code:
 </details>
 ```
 
-Or, you can leave a section open by default by including the `open` attribute in the tag:
+```
+\```HTML
+<details>
+  <summary>Collapsed by default</summary>
+  This section was collapsed by default!
+</details>
+\```
+```
+
+或者
 
 <details open>
   <summary>Open by default</summary>
   This section is open by default thanks to open in the &lt;details open&gt; tag!
 </details>
 
+```
+<details open>
+  <summary>Open by default</summary>
+  This section is open by default thanks to open in the &lt;details open&gt; tag!
+</details>
+```
 
-### Emphasize Tag
-
-The emphasize tag should _italicize_ text.
-
-### Insert Tag
-
-This tag should denote <ins>inserted</ins> text.
-
-### Keyboard Tag
-
-This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` tag.
-
-### Preformatted Tag
+### 预格式化标签
 
 This tag styles large blocks of code.
 
@@ -266,32 +317,51 @@ This tag styles large blocks of code.
 }
 </pre>
 
-### Quote Tag
+```
+<pre>
+.post-title {
+  margin: 0 0 5px;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 1.2;
+  and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
+}
+</pre>
+```
+
+### 引用标签
 
 <q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
 
-### Strike Tag
+```
+<q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
+```
 
-This tag will let you <strike>strikeout text</strike>.
-
-### Strong Tag
-
-This tag shows **bold text**.
-
-### Subscript Tag
+### 下标标签
 
 Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
 
-### Superscript Tag
+```
+Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
+```
+
+### 上标标签
 
 Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
 
-### Variable Tag
+```
+Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
+```
+
+### 变量标签
 
 This allows you to denote <var>variables</var>.
 
+```
+This allows you to denote <var>variables</var>.
+```
+
 ***
-**Footnotes**
+**脚注**
 
-The footnotes in the page will be returned following this line, return to the section on <a href="#footnotes">Markdown Footnotes</a>.
-
+The footnotes in the page will be returned following this line, return to the section on <a href="#脚注">Markdown Footnotes</a>.
