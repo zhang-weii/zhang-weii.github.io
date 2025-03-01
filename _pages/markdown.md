@@ -1,18 +1,15 @@
 ---
 permalink: /markdown/
-title: "Markdown"
+title: "Markdown 指南"
 author_profile: true
 redirect_from: 
   - /md/
   - /markdown.html
 ---
 
-
-# Markdown 指南
-
 ## 标题
 
-要创建标题，请在单词或短语前面添加井号 (#) 。井号的数量代表了标题的级别。例如，添加三个井号即创建一个三级标题 (<h3>) (例如：### My Header)。
+创建标题，在单词或短语前面添加井号。井号的数量代表了标题的级别。例如，添加三个井号即创建一个三级标题 (<h3>) (例如：### XXX)。
 
 # 标题一
 
@@ -60,36 +57,15 @@ redirect_from:
 
 ## 块引用
 
-单行块引用：
+> 现在是引用。
 
 ```
-> 引用很酷。
+> 现在是引用。
 ```
-
-## 注意
-
-**小心！** 可以通过将 `{: .notice}` 附加到段落来添加注意。
-{: .notice}
 
 ```
 **小心！** 可以通过将 `{: .notice}` 附加到段落来添加注意。
 {: .notice}
-```
-
-## 定义列表
-
-定义列表一标题
-:   定义列表一
-
-定义列表二标题
-:   定义列表二
-
-```
-定义列表一标题
-:   定义列表一
-
-定义列表二标题
-:   定义列表二
 ```
 
 ## 无序列表（嵌套）
@@ -170,38 +146,38 @@ redirect_from:
 
 ## 链接
 
-这是一个[链接](http://github.com "Github")的例子。
+这是一个[链接](http://github.com "Github")。
 
 ```
-这是一个[链接](http://github.com "Github")的例子。
+这是一个[链接](http://github.com "Github")。
 ```
 
 ## 脚注
 
-这是一个简单的脚注[^1]， 这是一个更长的脚注[^bignote]。
+这是一个单行脚注[^1]， 这是一个多行脚注[^2]。
 
-[^1]: 这是第一个脚注。
+[^1]: 这是一个单行脚注。
 
-[^bignote]: 这是一个有多个段落和代码的。
+[^2]: 这是一个多行脚注。
 
-    缩进段落以将它们包含在脚注中。
+    缩进以将它们包含在同一脚注中。
 
     `{我的代码}`
 
-    添加尽可能多的段落。
+    缩进以将它们包含在同一脚注中。
 
 ```
-这是一个简单的脚注[^1]， 这是一个更长的脚注[^bignote]。
+这是一个单行脚注[^1]， 这是一个多行脚注[^2]。
 
-[^1]: 这是第一个脚注。
+[^1]: 这是一个单行脚注。
 
-[^bignote]: 这是一个有多个段落和代码的。
+[^2]: 这是一个多行脚注。
 
-    缩进段落以将它们包含在脚注中。
+    缩进以将它们包含在同一脚注中。
 
     `{我的代码}`
 
-    添加尽可能多的段落。
+    缩进以将它们包含在同一脚注中。
 ```
 
 ## 图片
@@ -224,144 +200,87 @@ redirect_from:
 
 ### 插入标签
 
-此标记应表示<ins>插入</ins>的文本。
+这个标签表示<ins>插入</ins>的文本。
 
 ```
-此标记应表示<ins>插入</ins>的文本。
+这个标签表示<ins>插入</ins>的文本。
 ```
 
 ### 地址标签
 
 <address>
-  1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
+  东川路800号<br /> 闵行区<br /> 上海市
 </address>
 
 ```
 <address>
-  1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
+  东川路800号<br /> 闵行区<br /> 上海市
 </address>
 ```
 
 ### 缩写标签
 
-The abbreviation CSS stands for "Cascading Style Sheets".
+The abbreviation SJTU stands for "Shanghai Jiao Tong University".
 
-*[CSS]: Cascading Style Sheets
-
-```
-The abbreviation CSS stands for "Cascading Style Sheets".
-
-*[CSS]: Cascading Style Sheets
-```
-
-### 代码标签
-
-```python
-print('Hello World!')
-```
+*[SJTU]: Shanghai Jiao Tong University
 
 ```
-\```python
-print('Hello World!')
-\```
+The abbreviation SJTU stands for "Shanghai Jiao Tong University".
+
+*[SJTU]: Shanghai Jiao Tong University
 ```
 
 ### 细节标签
 
 <details>
-  <summary>Collapsed by default</summary>
-  This section was collapsed by default!
+  <summary>打开</summary>
+  被发现了
 </details>
-
-```HTML
-<details>
-  <summary>Collapsed by default</summary>
-  This section was collapsed by default!
-</details>
-```
-
-```
-\```HTML
-<details>
-  <summary>Collapsed by default</summary>
-  This section was collapsed by default!
-</details>
-\```
-```
 
 或者
 
 <details open>
-  <summary>Open by default</summary>
-  This section is open by default thanks to open in the &lt;details open&gt; tag!
+  <summary>打开</summary>
+  被发现了
 </details>
-
-```
-<details open>
-  <summary>Open by default</summary>
-  This section is open by default thanks to open in the &lt;details open&gt; tag!
-</details>
-```
 
 ### 预格式化标签
 
-This tag styles large blocks of code.
+生成一个预格式化文本
 
 <pre>
-.post-title {
-  margin: 0 0 5px;
-  font-weight: bold;
-  font-size: 38px;
-  line-height: 1.2;
-  and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
+上海交通大学 {
+  饮水思源
+  爱国荣校
+  苟利国家生死以，岂因祸福避趋之
 }
 </pre>
-
-```
-<pre>
-.post-title {
-  margin: 0 0 5px;
-  font-weight: bold;
-  font-size: 38px;
-  line-height: 1.2;
-  and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
-}
-</pre>
-```
-
-### 引用标签
-
-<q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
-
-```
-<q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
-```
 
 ### 下标标签
 
-Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
+H<sub>2</sub>O.
 
 ```
-Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
+H<sub>2</sub>O.
 ```
 
 ### 上标标签
 
-Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
+E = MC<sup>2</sup>.
 
 ```
-Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
+E = MC<sup>2</sup>.
 ```
 
 ### 变量标签
 
-This allows you to denote <var>variables</var>.
+变量 <var>X</var>.
 
 ```
-This allows you to denote <var>variables</var>.
+变量 <var>X</var>.
 ```
 
 ***
 **脚注**
 
-The footnotes in the page will be returned following this line, return to the section on <a href="#脚注">Markdown Footnotes</a>.
+以下是本页的脚注内容, 脚注位置在 <a href="#脚注">脚注</a>.
