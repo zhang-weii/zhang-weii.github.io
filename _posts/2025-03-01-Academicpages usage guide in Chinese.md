@@ -8,14 +8,22 @@ tags:
   - CV
 ---
 
-这是中文版学术主页使用指南，旨在搭建一个托管在 [Github](http://github.com) 的学术主页。通过开源项目 [Academicpages](https://github.com/academicpages/academicpages.github.io) 和 Github 的 Github Pages 服务我们可以搭建一个**免费**、**简约**和**高度定制**的学术主页。
+这是中文版学术主页使用指南，旨在搭建一个托管在 [Github](http://github.com) 的学术主页。通过开源项目 [Academicpages](https://github.com/academicpages/academicpages.github.io) 和 [Github](http://github.com) 的 [GitHub pages](https://pages.github.com) 服务我们可以搭建一个**免费**和**高度定制**的学术主页。
 
-# 入门
+# 生成 site
 
-1. 如果没有 [Github](http://github.com) 帐户，请注册一个 GitHub 帐户并确认电子邮件。
-2. 通过单击右上角的“fork”按钮来创建[此存储库](https://github.com/academicpages/academicpages.github.io)的分叉。
-3. 转到存储库的设置（以“代码”开头的选项卡中最右边的项目，应位于“取消监视”下方）。将存储库重命名为“[您的 GitHub 用户名].github.io”，这也是您网站的 URL。
-4. 设置站点范围的配置并创建内容和元数据。
-5. 将任何文件（如 PDF、.zip 文件等）上传到 files/ 目录。它们将出现在 https://[你的 GitHub 用户名].github.io/files/example.pdf。
-6. 通过转到“GitHub 页面”部分中的存储库设置来检查状态。
-7. （可选）使用 markdown_generator 文件夹中的 Jupyter 笔记本或 python 脚本从 TSV 文件生成用于出版物和讨论的 markdown 文件。
+1. 注册一个 GitHub 帐户。
+2. Fork 开源项目 [Academicpages](https://github.com/academicpages/academicpages.github.io)来创建副本，并且重命名为“[您的 GitHub 用户名].github.io”。
+3. 点击仓库上方的 Settings ，点击左侧的 Pages ，修改 Branch 为 master/root ,然后 save。
+4. 一会儿之后，可以在本页看到， Your site is live at https://[您的 GitHub 用户名].github.io。
+5. 进入生成的网址，就看到了原仓库的模板，下面介绍各部分如何使用和修改。
+
+# 修改 site
+## 修改
+![BlogPosts1_Your Name Site Title](/images/Blog Posts/Blog Posts 1/BlogPosts1_Your Name Site Title.png)
+* 1区由_config.yml决定：隐藏/显示/修改
+* 2区由_pages/about.md决定：字体/链接/图片
+* 3区由_data/navigation.yml决定：隐藏/显示/修改
+* 下面主要对3区各部分进行分别说明
+
+
